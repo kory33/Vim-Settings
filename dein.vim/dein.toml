@@ -1,0 +1,168 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build= 'mingw32-make -f make_mingw64.mak'
+
+[[plugins]]
+repo = 'delphinus35/typescript-vim'
+rev  = 'colorize-template-strings'
+
+[[plugins]]
+repo = 'cohama/lexima.vim'
+
+[[plugins]]
+repo = 'elzr/vim-json'
+if   = '''! has('kaoriya')'''
+
+[[plugins]]
+repo    = 'vim-airline/vim-airline'
+depends = ['vim-airline-themes']
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]] 
+repo = 'osyo-manga/vim-precious'
+depends = ['context_filetype.vim']
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'Shougo/vimshell'
+
+[[plugins]] # toml syntax
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo =  'evidens/vim-twig'
+
+[[plugins]]
+repo =  'w0ng/vim-hybrid'
+
+[[plugins]]
+repo =  'Shougo/deoplete.nvim'
+
+[[plugins]]
+repo =  'Shougo/neocomplete.vim'
+
+[[plugins]]
+repo =  'Shougo/unite.vim'
+
+[[plugins]]
+repo =  'Shougo/neosnippet.vim'
+
+[[plugins]]
+repo =  'Shougo/neocomplcache'
+
+[[plugins]]
+repo =  'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo =  'tomasr/molokai'
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 't9md/vim-quickhl'
+
+[[plugins]]
+repo = 'thinca/vim-visualstar'
+
+[[plugins]]
+repo = 'kien/ctrlp.vim'
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 't9md/vim-textmanip'
+
+[[plugins]]
+repo = 'thinca/vim-prettyprint'
+
+[[plugins]]
+repo = 'scrooloose/syntastic'
+
+[[plugins]]
+repo = 'osyo-manga/vim-watchdogs'
+
+[[plugins]]
+repo = 'hokaccha/vim-html5validator'
+
+[[plugins]]
+repo = 'kana/vim-smartinput'
+
+[[plugins]]
+repo = 'rhysd/vim-operator-surround'
+
+[[plugins]]
+repo = 'kana/vim-operator-user'
+
+[[plugins]]
+repo = 'kana/vim-textobj-user'
+
+###### for C/C++  ######
+
+[[plugins]]
+repo = 'justmao945/vim-clang'
+
+[[plugins]]
+repo = 'Shougo/neoinclude.vim'
+
+###### for Python ######
+
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+
+[[plugins]]
+repo = 'andviro/flake8-vim'
+
+[[plugins]]
+repo = 'hynek/vim-python-pep8-indent'
+
+[[plugins]]
+repo = 'hachibeeDI/python_hl_lvar.vim'
+
+[[plugins]]
+repo = 'kana/vim-textobj-indent'
+
+[[plugins]]
+repo = 'bps/vim-textobj-python'
+
+[[plugins]]
+repo = 'hachibeeDI/smartinput-petterns'
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
+#####  for Perl  ######
+
+[[plugins]]
+repo = 'c9s/perlomni.vim'
+
+#######################
+
+
+
+
+
