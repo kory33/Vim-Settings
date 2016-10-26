@@ -4,7 +4,7 @@
 " An example for a Japanese version vimrc file.
 " 日本語版のデフォルト設定ファイル(vimrc) - Vim 7.4
 "
-" Last Change: 08-Oct-2016.
+" Last Change: 21-Oct-2016.
 " Maintainer:  MURAOKA Taro <koron.kaoriya@gmail.com>
 "
 " 解説:
@@ -326,7 +326,7 @@ inoremap <expr><C-e>  neocomplcache#cancel_popup()
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType python setlocal omnifunc=jedi#completions
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " Enable heavy omni completion.
@@ -378,30 +378,11 @@ let g:clang_use_library = 1
 let g:clang_c_completeopt   = 'menuone'
 let g:clang_cpp_completeopt = 'menuone'
 
-if executable('clang-3.7')
-    let g:clang_exec = 'clang-3.7'
-elseif executable('clang-3.6')
-    let g:clang_exec = 'clang-3.6'
-elseif executable('clang-3.5')
-    let g:clang_exec = 'clang-3.5'
-elseif executable('clang-3.4')
-    let g:clang_exec = 'clang-3.4'
-else
-    let g:clang_exec = 'clang'
-endif
-
-if executable('clang-format-3.6')
-    let g:clang_format_exec = 'clang-format-3.6'
-elseif executable('clang-format-3.5')
-    let g:clang_format_exec = 'clang-format-3.5'
-elseif executable('clang-format-3.4')
-    let g:clang_format_exec = 'clang-format-3.4'
-else
-    let g:clang_format_exec = 'clang-format'
-endif
+let g:clang_exec = 'clang-3.8'
+let g:clang_format_exec = 'clang-format'
 
 let g:clang_c_options = '-std=c11'
-let g:clang_cpp_options = '-std=c++11'
+let g:clang_cpp_options = '-std=gnu++11'
 
 " }}}
 
@@ -445,7 +426,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11'
+let g:syntastic_cpp_compiler_options = ' -std=gnu++14 -fsyntax-only'
 """ }}}
 
 "-*******************************************-"
@@ -533,4 +514,6 @@ map <silent> <C-S-Tab> gT
 map <silent> <F4> :quit <CR>
 imap <silent> <F4> <ESC> :quit <CR>
 
+set fileencodings=utf-8,cp932
+set fileencoding=utf-8
 
